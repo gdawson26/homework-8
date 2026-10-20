@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- root element -->
+<html lang="eng">
+    <!-- head section -->
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+    <style>
+
+      body{
+        font-family: 'Rubik', sans-serif;
+      }
+
+      .background
+      {
+        background-color: #f3f0e2;
+      }
+      .gradient 
+      {
+        font-family: 'Momo Trust Display', sans-serif;
+        background: linear-gradient(135deg, #9ecde6 0%, #f3f0e2 100%) !important;
+        border: 2px solid #6a4be6 !important;
+      }
+
+      .card 
+      {
+        background-color: #d2e7f4;
+        border: 2px solid #6a4be6 !important;
+      }
+
+      .navbar
+      {
+        background-color: rgb(219, 217, 207);
+       }
+
+       .project-countdown
+       {
+        background-color: #d2e7f4;
+        border: 2px solid #6a4be6 !important;
+       }
+    </style>
+    </head>
+
+
+<body class="background">
+
+
+<!--header-->
+  <header class="gradient text-primary-emphasis border-bottom py-4">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        <div class="col-12">
+          <h1 class="display-5 fw-bold mb-1">Grace Dawson</h1>
+          <p class="lead mb-0">Sophomore Computer Science student at NAU</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+
+<!--navigation bar-->
+  <nav class="navbar navbar-expand-md sticky-top mb-2">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto align-items-md-center gap-1 py-2 py-md-0">
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#employment" class="nav-link">Employment</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Download Resume Button on the right edge of navigation row -->
+        <div class="d-flex my-2 my-md-0">
+          <a id="download-button" href="Resume.docx" download="my-resume.docx" class="btn btn-primary btn-md px-3 w-100">Download</br>my Resume!</a>
+          <div class="badge my-0 my-md-0 w-auto" id="download-tracker" style="margin-left: 30px;""></div>
+        </div>
+      </div>
+    </div>
+  </nav>  
+
+<!-- greeting -->
+<div id="greeting" style="color: rgb(30, 29, 114); font-size: 24px;"></div
+
+
+< class="col-lg-9 ps-lg-4">    
+          <section id="summary" class="card p-4 mb-4">
+            <h3 class="h4 text-primary-emphasis fw-bold pb-2 mb-3">Summary:</h3>
+            <!-- paragraph -->
+            <p>Hello, I'm Grace! I'm a Computer Science major a beginner programmer. I hope to learn more about programming and be able to use it to my advantage in a future career!</p>
+          </section>
+
+        <!-- skill lists-->
+        <section id="skills" class="card p-4 mb-4">
+        <h3 class="h4 text-primary-emphasis fw-bold pb-2 mb-3">CS Skills:</h3> 
+        <div class="row g-4">
+
+        <div class="d-flex align-items-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/4854/4854186.png" style="max-width: 200px" alt="An image of a computer" class="me-2">
+        <ul>
+          <li>Basic Python programming skills</li>
+          <li>Basic C programming skills</li>
+          <li>Command line basics</li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="d-flex align-items-center mb-3">     
+      <h4 class="h5 text-primary-emphasis fw-bold mb-0">Other Skills:</h4>  
+        <img src="https://cdn-icons-png.flaticon.com/512/11673/11673929.png" style="max-width: 100px;" alt="An image of people talking" class="me-2">
+        
+      </div>
+        <ul>
+          <li>Clear communication</li>
+          <li>Proficient with time management</li>
+          <li>Quickly adapts to new environments and systems</li>
+        </ul>   
+        </div>  
+      </div>
+    </section>
+
+<!--skills input list-->
+    <div class="input-form card p-4 mb-4"> 
+        <input type="text" id="skillInput" placeholder="Enter a new skill here:">
+        <button id="skillButton">Enter</button> 
+    
+       <h3 class="text-primary-emphasis fw-bold pb-2 mb-3">New Skills:</h3>
+
+    <ul id="skillList"></ul>
+    </div>
+
+
+    <section id="experience" class="card p-4 mb-4">
+        <h3 class="h4 text-primary-emphasis fw-bold pb-2 mb-3">Projects:</h3>
+        <div class="row-align-items-center g-3">
+        <div class="col-sm-3 col-md-2 text-center text-sm-smart">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Northern_Arizona_Athletics_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" style="max-width: 100pxs" alt="A picture of the NAU logo" class="img-fluid">
+        </div>
+        <div class="col-sm-9 col-md-10">
+        <p>So far, I've taken classes that focus on working in different coding languages, as well as command line classes and a class about the organization of computer systems. Although it seems pretty unrelated to computer science, I also have a lot of experience working in childcare. If possible, I might want to explore a teaching career that helps children understand computational thinking.</p>
+        </div>
+      </div>
+      </section>
+
+<!-- project countdown-->
+      <div class="project-countdown card p-4 mb-4">
+        <h3 class="h4 text-danger fw-bold pb-2 mb-3">New Project:</h3>
+        <p>An interactive weather website!</p>
+        <p>Deadline: <span id="project-countdown"></span></p>
+      </div>
+
+<!-- projects from arrays-->
+    <section class="card p-4 mb-4" id="upcoming-projects">
+        <h3 class="text-primary-emphasis fw-bold pb-2 mb-3" >Upcoming Projects:</h3>
+        <div id="projects-container"></div>
+    </section>
+
+
+<!--exp and edu-->
+<section id="education" class="card p-4 mb-4">
+  <h3 class="h4 text-primary-emphasis fw-bold pb-2 mb-3">Education:</h3>
+  <table class="table table-bordered">
+<!-- headers -->
+    <thead class="table-info">
+      <tr>
+        <th>School</th>
+        <th>Location</th>
+        <th>Duration</th>
+      </tr> 
+    </thead>
+
+<!-- new JS table info -->
+    <tbody id="education-data"></tbody>
+  </table>
+</section> 
+
+<section id="employment" class="card p-4 mb-4">
+  <h3 class="h4 text-primary-emphasis fw-bold pb-2 mb-3">Employment:</h3>
+    <table class="table table-bordered">
+      <thead class="table-info">
+        <tr>
+          <th>Establishment</th>
+          <th>Location</th>
+          <th>Position</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+
+<!-- JS table data-->
+        <tbody id="employment-data"></tbody>
+    </table>
+</section> 
+
+    </div>
+
+        <footer class="gradient border rounded shadow-sm p-4 mt-4 mb-3">
+          <div class="row align-items-center text-center text-md-start" id="contact">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h3 class="h5 text-primary-emphasis fw-bold mb-1">Contact Info</h3>
+            </div>
+            
+            <div class="col-md-5"></div>
+            <div class="d-flex flex-column flex-md-row justify-content-md-end gap-2 gap-md-4">
+            <a href="mailto:ghd26@nau.edu">Email: ghd26@nau.edu</a>
+            <br/>
+            <a href="tel:+8315215535">Phone: (831) 521-5535</a>
+            </div>
+          </footer>
+        </main>
+
+        <!-- connect javascript-->
+        <script src="app.js"></script>
+        
+      </body>
+ </html>
